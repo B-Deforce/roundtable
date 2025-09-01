@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roundtable"
+version = "0.1.0"
+description = "This project implements a multi-agent roundtable discussion system using AI agents."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.102.0",
+    "openai-agents>=0.2.10",
+    "pydantic>=2.11.7",
+    "pyyaml>=6.0.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
